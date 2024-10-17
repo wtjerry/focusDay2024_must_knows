@@ -1,0 +1,35 @@
+{
+  "name": "Editor",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/haskell:2": {
+      "globalPackages": "hlint stylish-haskell"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "haskell.haskell"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "haskell.formattingProvider": "stylish-haskell",
+        "update.showReleaseNotes": false,
+        "git.fetchOnPull": true,
+        "git.autofetch": "all",
+        "git.pruneOnFetch": true,
+        "git.autofetchPeriod": 3600,
+        "githubPullRequests.ignoredPullRequestBranches": [
+          "main"
+        ]
+      }
+    }
+  },
+  "updateContentCommand": {
+    "build": "stack build --test --bench --no-run-tests --no-run-benchmarks"
+  },
+  "hostRequirements": {
+    "memory": "16gb",
+    "storage": "32gb"
+  }
+}
