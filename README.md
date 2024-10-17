@@ -10,3 +10,6 @@
 8. open a shell in VSCode (Terminal->NewTerminal) and enter `stack run`. It should return with something along the lines of "all done with your focus day preparations"
 9. please do this BEFORE the focus day
 
+# potential fallback:
+https://www.tutorialspoint.com/compile_haskell_online.php
+
