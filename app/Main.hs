@@ -37,9 +37,18 @@ listPhoneSpecs =
 printWritingInstrument :: WritingInstrument -> IO ()
 printWritingInstrument (Pencil sharpnessLevel leftoverLength) = putStrLn ("Pencil: Sharpness: " <> show sharpnessLevel <> " with length " <> show leftoverLength)
 printWritingInstrument (Pen leftoverInk) = putStrLn ("Pen: leftover ink: " <> show leftoverInk)
-printWritingInstrument Brush = putStrLn "Brush"
+--printWritingInstrument Brush = putStrLn "Brush"
 printWritingInstrument (HammerAndChisel sharpnessLevel) = putStrLn ("Pencil: Sharpness: " <> show sharpnessLevel)
 
 
 examplePencil :: WritingInstrument
 examplePencil = Pencil 100 2
+
+add :: Int -> Int -> Int
+add a b = a + b
+
+intToString :: Int -> String
+intToString a = show a
+
+concatStrings :: String -> String -> String
+concatStrings a b = a <> b
