@@ -14,22 +14,8 @@
       "settings": {
         "editor.formatOnSave": true,
         "haskell.formattingProvider": "stylish-haskell",
-        "update.showReleaseNotes": false,
-        "git.fetchOnPull": true,
-        "git.autofetch": "all",
-        "git.pruneOnFetch": true,
-        "git.autofetchPeriod": 3600,
-        "githubPullRequests.ignoredPullRequestBranches": [
-          "main"
-        ]
+        "update.showReleaseNotes": false
       }
     }
-  },
-  "updateContentCommand": {
-    "build": "stack build --test --bench --no-run-tests --no-run-benchmarks"
-  },
-  "hostRequirements": {
-    "memory": "16gb",
-    "storage": "32gb"
   }
 }
