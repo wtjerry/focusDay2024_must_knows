@@ -6,9 +6,10 @@
 4. in VSCode File->OpenFolder->%this_repo%
 5. it asks you whether to open in devcontainer -> yes
 6. wait 5-15min for everything to install and build. It might show some "errors", but will usually fix them by itself.
-7. open src/Lib.hs. It will ask you to install HLS. Install it.
-8. open a shell in VSCode (Terminal->NewTerminal) and enter `stack run`. It should return with something along the lines of "all done with your focus day preparations"
-9. please do this BEFORE the focus day
+7. you might need to run ```stack update``` in the console
+8. open src/Lib.hs. It will ask you to install HLS. Install it.
+9. open a shell in VSCode (Terminal->NewTerminal) and enter `stack run`. It should return with something along the lines of "all done with your focus day preparations"
+10. please do this BEFORE the focus day
 
 # potential fallback:
 https://www.tutorialspoint.com/compile_haskell_online.php
